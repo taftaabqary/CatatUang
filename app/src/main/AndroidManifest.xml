@@ -35,9 +35,11 @@
             android:exported="false" />
         <activity
             android:name=".Register"
+            android:theme="@style/Theme.CatatUang.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".Login"
+            android:theme="@style/Theme.CatatUang.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

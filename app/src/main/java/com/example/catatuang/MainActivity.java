@@ -130,8 +130,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
-    private void initDataset() {
 
+    private void initDataset() {
         SQLiteDatabase db = dbcenter.getReadableDatabase();
         //mengambil data dari database untuk isi dari recycler view
         cursor = db.rawQuery("SELECT * FROM transaksi where id_user = "+ id,null);
@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             dataKeterangan.add(cursor.getString(6).toString());
             dataJumlah.add(cursor.getString(5).toString());
         }
-
     }
 
     @Override

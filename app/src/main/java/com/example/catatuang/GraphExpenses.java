@@ -75,7 +75,7 @@ public class GraphExpenses extends AppCompatActivity {
             }
         }
 
-        PieDataSet pieDataSet = new PieDataSet(visitors, "INCOME GRAPHIC");
+        PieDataSet pieDataSet = new PieDataSet(visitors, "EXPENSES GRAPHIC");
         pieDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
         pieDataSet.setValueTextColor(Color.BLACK);
         pieDataSet.setValueTextSize(16f);
@@ -84,7 +84,7 @@ public class GraphExpenses extends AppCompatActivity {
 
         pieChart.setData(pieData);
         pieChart.getDescription().setEnabled(false);
-        pieChart.setCenterText("INCOME GRAPHIC BAR");
+        pieChart.setCenterText("EXPENSES GRAPHIC BAR");
         pieChart.animate();
     }
 }
