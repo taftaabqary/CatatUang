@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp">
+    <TextView
+        android:paddingStart="5dp"
+        android:textSize="16sp"
+        android:background="@drawable/tanggalan"
+        android:id="@+id/txttgl"
+        android:layout_width="93dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_height="23dp"
+        android:text="2022-10-15"/>
+    <TextView
+        android:id="@+id/txtket"
+        android:layout_marginLeft="35dp"
+        android:textSize="19sp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Keterangan"
+        android:textStyle="bold"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/txtjml"
+        android:layout_marginTop="1dp"
+        android:textSize="20sp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:text="7000"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textStyle="bold"
+        android:gravity="end" />
+
+</LinearLayout>

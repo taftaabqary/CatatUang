@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgmobile"
+    tools:context=".Register">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/logocircle" />
+
+    <EditText
+        android:id="@+id/edituser"
+        android:layout_width="300dp"
+        android:paddingStart="15dp"
+        android:maxLines="1"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_states"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_edittext_states"
+        android:layout_gravity="center"
+        android:paddingStart="15dp"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="300dp"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:background="@drawable/rounded_edittext_states"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editkonfpass"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:paddingStart="15dp"
+        android:hint="Konfirmasi Password"
+        android:background="@drawable/rounded_edittext_states"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonregister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="REGISTER"
+        android:backgroundTint="@color/black"
+        />
+
+
+
+</LinearLayout>

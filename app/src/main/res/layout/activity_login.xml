@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgmobile"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="226dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/logocircle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo!"
+        android:textSize="38sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="60dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Masuk dengan email dan password"
+        android:textColor="#B2B3B3"
+        android:layout_marginStart="60dp"
+        android:textSize="16sp"
+        />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:hint="Email Kamu"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:background="@drawable/rounded_edittext_states"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:hint="Masukkan Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:paddingStart="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:background="@drawable/rounded_edittext_states"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnlogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/black"
+        android:backgroundTint="@color/black"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:text="Daftar"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        />
+</LinearLayout>

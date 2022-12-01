@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgmobiletipis"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="27dp"
+            >
+
+            <TextView
+                android:id="@+id/txtincome"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:text="INCOME"
+                android:textAlignment="center"
+                android:textColor="#1565C0"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtexp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtincome"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:text="EXPENSES"
+                android:textColor="#1565C0"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtbl"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtexp"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:text="BALANCE"
+                android:textColor="#1565C0"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtincome"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:paddingTop="10dp"
+                android:text="17000"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/expenses"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtincome"
+                android:layout_toRightOf="@id/income"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:paddingTop="10dp"
+                android:text="17000"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtincome"
+                android:layout_toRightOf="@id/expenses"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:paddingTop="10dp"
+                android:text="17000"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="7dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:background="@drawable/bgmobiletipis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"/>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

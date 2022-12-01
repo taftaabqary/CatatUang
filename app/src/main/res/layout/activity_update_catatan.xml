@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgmobile"
+    tools:context=".UpdateCatatan">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/Theme.CatatUang.AppBarOverlay">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:background="@drawable/back">
+        </androidx.appcompat.widget.AppCompatButton>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addincome"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:text="Income"
+                android:textColor="@color/white"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addexp"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:text="EXPENSES" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:gravity="center"
+                android:text="Date"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:layout_toRightOf="@id/txtdate"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/date"
+                />
+
+            <Button
+                android:id="@+id/calendar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/date"
+                android:background="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/txtkategori"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtdate"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Kategori"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtdate"
+                android:layout_toRightOf="@id/txtkategori" />
+
+            <TextView
+                android:id="@+id/txtjumlah"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/txtkategori"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:gravity="center"
+                android:text="Nominal"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_toRightOf="@id/txtjumlah"
+                android:layout_below="@id/txtkategori"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/edtjumlah"
+                android:inputType="number"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtnote"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/futura_pt_demibold"
+                android:gravity="center"
+                android:text="Catatan"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:id="@+id/edtnote"
+                android:layout_toRightOf="@id/txtnote"/>
+
+            <Button
+                android:layout_toRightOf="@id/edtnote"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/btncamera"
+                android:background="@drawable/ic_menu_camera"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtnote"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imgnote"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        app:strokeWidth="1dp"
+        android:id="@+id/btnsave"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>
