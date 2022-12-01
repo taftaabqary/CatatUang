@@ -21,8 +21,8 @@
         </androidx.appcompat.widget.AppCompatButton>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <lecho.lib.hellocharts.view.PieChartView
-        android:id="@+id/chart"
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
