@@ -57,7 +57,7 @@ User juga dapat melihat grafik pengeluaran yang dia lakukan yaitu pada menu side
 
 ### 13. Logout Account
 Terakhir, user dapat keluar dari akunnya dengan klik tombol “log out” pada menu sidebar <br><br>
-<img src="image/app_bar.png" width=240 height =500>
+<img src="image/bar.png" width=240 height =500>
 
 
 
