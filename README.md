@@ -17,7 +17,7 @@ CATAT UANG juga dapat menampilkan pemasukan dan pengeluaran kita berdasarkan gra
 ## Screenshot Aplikasi
 ### 1. Halaman Muat Aplikasi
 Halaman ketika proses loading membuka aplikasi, menggunakan splash screen <br><br>
-<img src="image/splashscreen.png" width=240 height =430>
+<img src="image/splashscreen.png" width=240 height =500>
 
 ### 2. Login
 Sebelum menggunakan aplikasi, user harus login terlebih dahulu dengan menginputkan email dan password yang telah terdaftar. Jika user belum memiliki akun, user harus mendaftar terlebih dahulu pada halaman register dengan klik tombol “Daftar” <br><br>
@@ -34,7 +34,7 @@ Terdapat informasi berapa total pengeluaran, pemasukan, dan jumlah saldo user sa
 
 ### 5. Tambah Transaksi Income/Expenses
 Pada halaman home, tekan button tambah maka akan muncul tampilan halaman tambah catatan. Untuk mencatat pemasukan klik Income, jika ingin mencatat pengeluaran klik Expenses. Masukkan tanggal dengan menekan icon kalender, pilih kategori yang disediakan, masukkan nominal, lalu masukkan catatan, anda juga dapat menambahkan dokumentasi berupa foto pada catatan anda, lalu klik tombol simpan, maka anda akan otomatis kembali ke halaman home dan catatan yang baru saja anda masukkan akan otomatis tampil pada recycle view <br><br>
-<img src="image/INPUT_EXPENSES.png" width=240 height =430> <img src="image/INPUT_INCOME.png" width=240 height =430>
+<img src="image/input1.png" width=240 height =430> <img src="image/input2.png" width=240 height =430>
 
 ### 6. Detail Catatan
 User dapat melihat catatan keuangan yang telah dibuat yaitu pada halaman home klik catatan yang ingin di lihat pada list recycle view <br><br>
@@ -50,7 +50,7 @@ Jika ada catatan yang ingin dihapus, user dapat menghapus catatan dengan klik ca
 
 ### 9. Grafik Income
 User dapat melihat grafik pemasukkan yang dia dapatkan yaitu pada halaman home pilihlah menu sidebar dan klik menu “grafik income” lalu anda akan masuk ke halaman grafik income, yang berisi grafik pie tentang pemasukan yang dilakukan dibandingkan berdasarkan kategory income <br><br>
-<img src="image/INCOME.png" width=240 height =430> <img src="image/grafikIncome.jpeg" width=240 height =430>
+<img src="image/INCOME.png" width=240 height =430>
 
 ### 10. Grafik Expenses
 User juga dapat melihat grafik pengeluaran yang dia lakukan yaitu pada menu sidebar klik menu “grafik expenses” lalu anda akan masuk ke halaman grafik expenses, yang berisi grafik pie tentang pengeluaran yang dilakukan dibandingkan berdasarkan kategory expenses <br><br>
@@ -58,7 +58,7 @@ User juga dapat melihat grafik pengeluaran yang dia lakukan yaitu pada menu side
 
 ### 13. Logout Account
 Terakhir, user dapat keluar dari akunnya dengan klik tombol “log out” pada menu sidebar
-<img src="image/app_bar.png" width=240 height =430
+<img src="image/app_bar.png" width=240 height =430>
 
 
 
