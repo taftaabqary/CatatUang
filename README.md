@@ -33,7 +33,7 @@ Terdapat informasi berapa total pengeluaran, pemasukan, dan jumlah saldo user sa
 
 ### 5. Tambah Transaksi Income/Expenses
 Pada halaman home, tekan button tambah maka akan muncul tampilan halaman tambah catatan. Untuk mencatat pemasukan klik Income, jika ingin mencatat pengeluaran klik Expenses. Masukkan tanggal dengan menekan icon kalender, pilih kategori yang disediakan, masukkan nominal, lalu masukkan catatan, anda juga dapat menambahkan dokumentasi berupa foto pada catatan anda, lalu klik tombol simpan, maka anda akan otomatis kembali ke halaman home dan catatan yang baru saja anda masukkan akan otomatis tampil pada recycle view <br><br>
-<img src="image/input1.png" width=240 height =430> <img src="image/input2.png" width=240 height =500>
+<img src="image/input1.png" width=240 height =500> <img src="image/input2.png" width=240 height =500>
 
 ### 6. Detail Catatan
 User dapat melihat catatan keuangan yang telah dibuat yaitu pada halaman home klik catatan yang ingin di lihat pada list recycle view <br><br>
