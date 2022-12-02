@@ -30,11 +30,11 @@ Jika user telah menginputkan data sesuai ketentuan klik tombol register, maka ak
 
 ### 4. Home
 Terdapat informasi berapa total pengeluaran, pemasukan, dan jumlah saldo user saat ini. Rincian catatan keuangan user disajikan dalam bentu recycler view <br><br>
-<img src="image/home.xml.png" width=240 height =430>
+<img src="image/HOME.XML.png" width=240 height =430>
 
 ### 5. Tambah Transaksi Income/Expenses
 Pada halaman home, tekan button tambah maka akan muncul tampilan halaman tambah catatan. Untuk mencatat pemasukan klik Income, jika ingin mencatat pengeluaran klik Expenses. Masukkan tanggal dengan menekan icon kalender, pilih kategori yang disediakan, masukkan nominal, lalu masukkan catatan, anda juga dapat menambahkan dokumentasi berupa foto pada catatan anda, lalu klik tombol simpan, maka anda akan otomatis kembali ke halaman home dan catatan yang baru saja anda masukkan akan otomatis tampil pada recycle view <br><br>
-<img src="image/INPUTEXPENSES.png" width=240 height =430> <img src="image/INPUTINCOME.png" width=240 height =430>
+<img src="image/INPUT_EXPENSES.png" width=240 height =430> <img src="image/INPUT_INCOME.png" width=240 height =430>
 
 ### 6. Detail Catatan
 User dapat melihat catatan keuangan yang telah dibuat yaitu pada halaman home klik catatan yang ingin di lihat pada list recycle view <br><br>
