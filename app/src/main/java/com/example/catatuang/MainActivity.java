@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Cursor cursor;
     private SessionManagement sessionManagement;
     RecyclerView rv;
-    private ArrayList<String> dataId,dataTanggal, dataKeterangan, dataJumlah;
+    private ArrayList<String> dataId,dataTanggal, dataKeterangan, dataJumlah, dataJenis;
     DatabaseHelper dbcenter;
     String id="";
 
@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         dataTanggal = new ArrayList<>();
         dataKeterangan=new ArrayList<>();
         dataJumlah = new ArrayList<>();
+        dataJenis = new ArrayList<>();
 
 
         if(sessionManagement.isLoggedIn()) {
@@ -77,10 +78,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             {
                 cursor.moveToPosition(0);
                 if (cursor.isNull(0)) {
-                    tvIncome.setText("0"); //jika jumlah nya null isi text view dengan angka 0
+                    tvIncome.setText("Rp0"); //jika jumlah nya null isi text view dengan angka 0
                     i = 0;
-                } else { //jika tidak null isi sesuai databasw
-                    tvIncome.setText(cursor.getString(0).toString());
+                } else { //jika tidak null isi sesuai database
+                    tvIncome.setText("Rp"+cursor.getString(0).toString());
                     i = Integer.parseInt(cursor.getString(0).toString());
                 }
 
@@ -95,12 +96,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     tvExpanses.setText("0");
                     e = 0;
                 } else{
-                    tvExpanses.setText(cursor.getString(0).toString());
+                    tvExpanses.setText("Rp"+cursor.getString(0).toString());
                     e = Integer.parseInt(cursor.getString(0).toString());
                 }
             }
             int total = i-e; //total diperoleh dari income - expenses
-            tvBalance.setText(Integer.toString(total));
+            tvBalance.setText("Rp"+Integer.toString(total));
             id=user.get(sessionManagement.KEY_ID_USER);
         }
 
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         rv.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         rv.setLayoutManager(layoutManager);
-        adapter = new MyAdapter(dataId,dataTanggal,dataKeterangan,dataJumlah);
+        adapter = new MyAdapter(dataId,dataTanggal,dataKeterangan,dataJumlah,dataJenis);
         rv.setAdapter(adapter);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -142,7 +143,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             dataId.add(cursor.getString(0).toString());
             dataTanggal.add(cursor.getString(1).toString());
             dataKeterangan.add(cursor.getString(6).toString());
-            dataJumlah.add(cursor.getString(5).toString());
+            dataJumlah.add("Rp"+cursor.getString(5).toString());
+            dataJenis.add(cursor.getString(2).toString());
         }
     }
 

@@ -7,7 +7,7 @@
     <TextView
         android:paddingStart="5dp"
         android:textSize="16sp"
-        android:background="@drawable/tanggalan"
+        android:background="@drawable/side_nav_bar"
         android:id="@+id/txttgl"
         android:layout_width="93dp"
         android:fontFamily="@font/futura_pt_demibold"
@@ -17,7 +17,7 @@
         android:text="2022-10-15"/>
     <TextView
         android:id="@+id/txtket"
-        android:layout_marginLeft="35dp"
+        android:layout_marginLeft="25dp"
         android:textSize="19sp"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -26,16 +26,35 @@
         android:fontFamily="@font/futura_pt_demibold"
         android:textColor="@color/black"
         />
+
     <TextView
         android:id="@+id/txtjml"
         android:layout_marginTop="1dp"
-        android:textSize="20sp"
-        android:layout_width="80dp"
+        android:textSize="18sp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:textAlignment="textEnd"
+        android:textColor="#505270"
         android:text="7000"
         android:fontFamily="@font/futura_pt_demibold"
         android:textStyle="bold"
         android:gravity="end" />
+
+    <TextView
+        android:id="@+id/txtjns"
+        android:layout_marginTop="1dp"
+        android:textSize="19sp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="#00C853"
+        android:text="test"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:textStyle="bold"
+        />
+
+
+
+
 
 </LinearLayout>

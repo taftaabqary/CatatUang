@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.HashMap;
+import java.util.Locale;
 
 public class LihatCatatan extends AppCompatActivity {
     DatabaseHelper dbcenter;
@@ -63,8 +64,8 @@ public class LihatCatatan extends AppCompatActivity {
             jml = cursor.getString(5).toString();
             keterangan =  cursor.getString(6).toString();
 
-            text1.setText(cursor.getString(3).toString());
-            text2.setText(cursor.getString(2).toString());
+            text1.setText(cursor.getString(2).toString().toUpperCase(Locale.ROOT));
+            text2.setText(cursor.getString(3).toString());
             text3.setText(cursor.getString(5).toString());
             text4.setText(cursor.getString(1).toString());
             text5.setText(cursor.getString(6).toString());
