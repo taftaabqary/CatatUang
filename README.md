@@ -37,7 +37,7 @@ Pada halaman home, tekan button tambah maka akan muncul tampilan halaman tambah 
 
 ### 6. Detail Catatan
 User dapat melihat catatan keuangan yang telah dibuat yaitu pada halaman home klik catatan yang ingin di lihat pada list recycle view <br><br>
-<img src="image/DETAIL.XML.png" width=240 height =500>
+<img src="image/detail.png" width=240 height =500>
 
 ### 7. Edit Catatan
 User juga dapat mengedit catatan yang sudah terlanjur dibuat, dengan klik catatan yang akan diedit, dan pilih tombol edit, lalu anda akan masuk ke halaman edit catatan, di halaman edit catatan ini anda bisa mengoreksi tanggal, category, nominal dan catatan tentang keuangan anda, lalu jika sudah benar, klik tombol update, maka otomatis catatan, termasuk hasil income/expenses yg dimasukkan akan otomatis berubah <br><br>
@@ -45,7 +45,7 @@ User juga dapat mengedit catatan yang sudah terlanjur dibuat, dengan klik catata
 
 ### 8. Hapus Catatan
 Jika ada catatan yang ingin dihapus, user dapat menghapus catatan dengan klik catatan yang akan dihapus, dan pilih tombol hapus, lalu anda akan ada dialog alert untuk mengonfirmasi apakah user yakin untuk menghapus jika anda yakin ingin menghapus, langsung tekan tombol yes, maka otomatis catatan, termasuk hasil income/outcome yg dimasukkan akan otomatis terhapus  <br><br>
-<img src="image/DETAIL.XML.png" width=240 height =500>
+<img src="image/detail.png" width=240 height =500>
 
 ### 9. Grafik Income
 User dapat melihat grafik pemasukkan yang dia dapatkan yaitu pada halaman home pilihlah menu sidebar dan klik menu “grafik income” lalu anda akan masuk ke halaman grafik income, yang berisi grafik pie tentang pemasukan yang dilakukan dibandingkan berdasarkan kategory income <br><br>
